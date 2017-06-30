@@ -1,0 +1,14 @@
+{
+  "name": "huawei",
+  "version": "0.0.1",
+  "description": "做华为的",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fuye",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link type="text/css" rel="stylesheet" href="css/zhuce.css">
+		<script type="text/javascript" src="js/tool.js"></script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="margin">
+				<img src="img/zhu1.png" />
+			</div>
+		</div>
+		<div id="log">
+			<div class="margin">
+				<li>
+					<img src="img/zhu2.png" />
+					<span>手机号</span>
+				</li>
+				<li>
+					<img src="img/zhu4.png" />
+					<span>电子邮箱</span>
+				</li>
+				<p>已有华为账号<a href="#" target="_blank" >登陆</a>
+				</p>
+			</div>
+		</div>
+		
+		
+		
+			<div class="margin">
+				<div id="nav">
+				<div class="nav1">
+					<h2>注册华为账号</h2>
+					<p>华为账号适用于访问所有华为服务</p>
+				</div>
+				<div class="nav2">
+					<h4>国家/地区</h4>
+					<p>您正在注册中国的华为账号。</p>
+				</div>
+				<div class="nav3">
+					<h4>华为账号</h4>
+					<p>输入手机号作为您的华为账号，用于登陆、重设密码、验证身份。</p>
+					<div class="nav3-t">
+						<span>手机号：</span>
+						<select>
+							<option selected="selected">
+								+86(中国)
+							</option>
+						</select>
+						<input type="text" placeholder="输入手机号" id="txt6"/>
+					</div>
+						
+					<div class="nav3-b">
+						<span>验证码：</span>
+						<input type="text" placeholder="短信验证码" class="txt" />
+						<input type="button" value="获取验证码" class="btn" />
+					</div>	
+				</div>
+				<div class="nav4">
+						<h4>设置登陆密码</h4>
+					<div class="nav4l">
+						<span>密码</span>
+						<input type="text" placeholder="请输入密码" id="txt7"/>
+					</div>	
+					<div class="nav4r">
+						<span>确认密码</span>
+						<input type="text" placeholder="请输入密码" />
+					</div>
+				</div>
+				
+				
+				</div>
+			</div>
+		<div id="button">
+			<div class="margin">
+				<input type="button" value="注册" id="btn6"/>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		<div class="margin">
+		<div id="footer">	
+			<p>
+				<a href="https://hwid1.vmall.com/CAS/portal/agreements/userAgreement/zh-cn_userAgreement.html?version=china">用户协议
+				</a>
+				<span>|</span>
+				<a href="https://hwid1.vmall.com/CAS/portal/agreements/userPrivacyPolicy/zh-cn_userPrivacyPolicy.html?version=europe">
+					隐私协议
+				</a>
+				<span>|</span>
+				<a href="https://hwid1.vmall.com/CAS/portal/faq/faq.html">
+					常见问题
+				</a>
+			</p>
+			<p>
+				Copyright © 2011-2017 华为技术有限公司  版权所有  保留一切权利
+			</p>
+			<p>
+				苏B2-20070200号 | 苏ICP备09062682号-9
+			</p>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+	var txt6 = document.getElementById("txt6")
+		
+		var txt7 = document.getElementById("txt7")
+		
+		var btn6 = document.getElementById("btn6")
+		btn6.onclick=function(){
+		
+			$_cookie("username",txt6.value+"？"+txt7.value,{expires:7,})
+		}
+		
+	</script>	
+	</body>
+</html>

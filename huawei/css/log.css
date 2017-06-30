@@ -1,0 +1,52 @@
+.margin{width: 1124px;}
+#logo{height: 160px;}
+#logo img{padding: 10px 0 0 48px;}
+
+
+
+#banner{height: 578px;width: 1124px;border-bottom:1px solid #A4A4A4;}
+#banner .banner1{padding-left: 48px;float: left;}
+#banner .banner2{padding-left: 66px;float: left;}
+#banner .banner2 h2{font:900 30px/30px "";color: #ea5e00;margin-bottom: 18px;float: left;}
+
+#register{width: 300px; height: 250px;}
+#register input{width: 260px; height: 30px; font-size: 18px; margin-top: 10px}
+#register input:nth-of-type(3){width: 132px;height: 36px;float: left;}
+#register input:nth-of-type(4){height: 36px;width: 46px;}
+#register span{color: red; height: 20px; display: block}
+#testCode{width: 90px; height: 40px; background-color: gray; text-align: center; line-height: 40px; font-size: 22px; color: white;float: left;margin-top: 10px;}
+
+#banner .banner2 .banner2-b{height: 40px;margin-top: 40px;border-bottom: 1px solid #A4A4A4;}
+#banner .banner2 .banner2-b a{padding-left: 100px;}
+
+#banner .banner3{padding-left: 66px;width: 300px;height: 200px;float: left;padding-top: 20px;}
+#banner .banner3 input{width: 286px;height: 46px;background: #b40707;color: #FFFFFF;text-align: center;font: 700 16px/40px "";border:none;}
+#banner .banner3 input:hover{background: #e32525;}
+#banner .banner3 p{color: #B9B9B9;font:300 12px/41px "";float: left;}
+#banner .banner3 a{display:block;margin-top: 15px;}
+
+#footer{margin: 0 auto;float: left;text-align: center;margin-top: 50px;}
+#footer p{color: #B9B9B9;font-size: 12px;}
+#footer p a{text-decoration: none;color: #B9B9B9;}
+#footer span{color: #B9B9B9;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

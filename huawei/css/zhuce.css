@@ -1,0 +1,64 @@
+.margin{width: 988px;margin: 0 auto;}
+body{background: #f1f1f1;}
+#header{background: #333333;height: 67px;}
+#header img{padding-top: 8px;}
+
+#log{height: 62px;}
+#log li{display:block;width: 145px;height: 32px;float: left;margin-right: 4px;background: #eb1c24;margin-top: 28px;}
+#log li span{font: 400 12px/12px "";color: white;display: block;float: left;padding-top: 10px;}
+#log li img{padding:3px 10px 0 10px;float: left;}
+#log li span:hover{text-decoration:underline;}
+#log p{width: 112px;height: 16px;float: right;font-size: 12px;padding-top: 36px;}
+#log p a{color: orangered;}
+#log li:nth-of-type(2){background: #999999;}
+
+
+#nav{width: 990px;height: 588px; background: white;}
+#nav .nav1{width: 794px;height: 125px;border-bottom: 1px solid #999999;margin-left: 97px;}
+#nav .nav1 h2{padding:54px 0 5px 0;}
+#nav .nav1 p{font-size: 12px;color: #A4A4A4;}
+#nav .nav2{width: 794px;height: 84px;border-bottom: 1px solid #999999;margin-left: 97px;}
+#nav .nav2 h4{padding: 24px 0 3px 0;}
+#nav .nav2 p{font-size: 12px;color: #A4A4A4;}
+#nav .nav3{width: 794px;height: 234px;border-bottom: 1px solid #CCCCCC;margin-left: 97px;}
+#nav .nav3 h4{margin: 16px 0;}
+#nav .nav3 p{font-size: 12px;color: #A4A4A4;}
+#nav .nav3 span{display: block;float: left;margin-right: 66px;}
+#nav .nav3 .nav3-t{padding: 36px 0;float: left;width: 660px;}
+#nav .nav3 .nav3-t input{margin-left: 34px;}
+#nav .nav3 .nav3-b{padding: 36px 0;float: left;}
+#nav .nav3 .nav3-b .btn{margin-left: 34px;width: 169px;}
+#nav .nav3 .nav3-b .txt{width:83px;}
+#nav .nav4{width: 794PX;height: 100PX;margin-left: 97PX;}
+#nav .nav4 span{display: block;float: left;margin-right: 66px;}
+#nav .nav4 .nav4l{float: left;margin-right: 60px;}
+
+
+#button{height: 114px;border-bottom: 1px solid #999999;}
+#button input{display: block;margin: 36px 0 0 354px;width: 278px;height: 42px;background: #d70506;color: white;}
+
+
+#footer{margin: 0 auto;float: left;text-align: center;margin-top: 50px;margin-left: 300px;}
+#footer p{color: #B9B9B9;font-size: 12px;}
+#footer p a{text-decoration: none;color: #B9B9B9;}
+#footer span{color: #B9B9B9;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

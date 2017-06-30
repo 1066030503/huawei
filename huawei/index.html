@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+		<title></title>
+			<style>
+#banner{position: relative;}
+.imgbox .clear{overflow:hidden; clear:both; width:0px; height:0px; }
+.imgbox{width:100%; margin-top:20px;height: 120px; text-align:center; }
+.imgbox #banner_img{padding:0px; margin:0px;}
+.imgbox #banner_img img{width: 1200px;height: 120px;margin-top: 20px;}
+.imgbox #banner_img li{float:left; list-style:none; }
+.imgbox #banner_img li.select{display:block;}
+.imgbox .imgnum span{border-radius:5px; color:#FFF; margin-left:15px;  background-color:#F90; cursor:pointer;}
+.imgbox .imgnum .onselect{background-color:#F00;}
+.imgbox .imgnum{text-align:center; float:left; margin-left:700px; position:relative;}
+
+		</style>
+	</head>
+		
+	<link type="text/css" rel="stylesheet" href="css/public.css"/>
+	<link type="text/css" rel="stylesheet" href="css/huawei.css"  />
+	<script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src = "js/11.js"></script>
+	<script type="text/javascript" src="js/midea.js"></script>
+	</head>
+	<body>
+		<header id="header">
+			<div class="margin">
+				<div class = "header_top">
+					<ul>
+						<li>
+							<a href="http://consumer.huawei.com/cn/" target="_blank">华为官网</a>
+						</li>
+						<li>
+							<a href="http://wwww.honor.cn/" target="_blank">荣耀官网</a>
+						</li>
+						<li>
+							<div class="dropdown">
+								<div class="h">
+									<a href="http://emui.huawei.com/appsoft/" target="_blank">软件应用</a>
+									<s></s>
+								</div>
+								<div class="b">
+									<p>
+										<a href="http://emui.huawei.com/cn/" target="_blank">EMUI</a>
+									</p>
+									<p>
+										<a href="http://appstore.huawei.com/" target="_blank">应用市场</a>
+									</p>
+									<p>
+										<a href="http://cloud.huawei.com/cn/contact" target="_blank">云服务</a>
+									</p>
+									<p>
+										<a href="http://developer.huawei.com/" target="_blank">开发者联盟</a>
+									</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="http://club.huawei.com" target="_blank">花粉俱乐部</a>
+						</li>
+						<li>
+							<a href="javascript:;" onclick="showSelectRegion()">Select Region</a>
+						</li>
+						<li>
+							<a href="https://www.vmall.com/priority" rel="nofollow">V码(优购码)</a>
+						</li>
+					</ul>
+				</div>
+				<div class="main">
+					<ul>
+						<li>
+							<a href="#" target="_blank">手机版</a>
+							<s></s>
+						</li>
+						<li>
+							<a href="#" target="_blank">更多精彩</a>
+							<s></s>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div id="header_buttom">
+			<div class="margin">
+				 <div class="logo">
+				 	<a href="" title="Vmall.com - 华为商城">
+				 		<img src="img/logo20170312023120.png" />
+				 	</a>
+				 </div>
+				 <div class="log">
+				 	<ul>
+				 		
+				 		<li>
+				 			<a href="#" target="_blank">注册</a>
+				 		</li>
+				 		<li>
+				 			<a href="http://127.0.0.1:8020/%E5%8D%8E%E4%B8%BA%E5%95%86%E5%9F%8E/log.html?__hbt=1498373757640" target="_blank" class="log1">登陆</a>
+				 		</li>
+				 	</ul>
+					 <input type="button" class="shopping"/>
+					  <input type="button" class="btn"/>
+					 <input type="text" placeholder="荣耀8青春版" class="txt"/>
+				 </div>
+			</div>
+		</div>
+		<div id="hot">
+			<div class="margin">
+				<span>全部商品</span>
+				<ul>
+					<li>
+						<a href="#" target="_blank">首页</a>
+					</li>
+					<li>
+						<a href="https://www.vmall.com/huawei" target="_blank">华为专区</a>
+					</li>
+					<li>
+						<a href="https://www.vmall.com/honor" target="_blank">荣耀专区</a>
+					</li>
+					<li>
+						<a href="https://sale.vmall.com/p10.html" target="_blank">HUAWEI P10</a>
+					</li>
+					<li>
+						<a href="https://mm.vmall.com/ry9.html" target="_blank">荣耀9</a>
+					</li>
+					<li>
+						<a href="https://sale.vmall.com/nova2.html" target="_blank">HUAWEI nova2</a>
+					</li>
+					<li>
+						<a href="https://www.vmall.com/product/738677717.html" target="_blank">荣耀V9</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		
+		
+				<!--
+                	作者：offline
+                	时间：2017-06-23
+                	描述：轮播图
+                -->
+<div id="banner">
+	<div id="banner_list" style="top:0; left:0;">
+		<ul>
+			<li><a href="#"><img src="img/q1.jpg" /></a></li>
+			<li><a href="#"><img src="img/q2.jpg" /></a></li>
+			<li><a href="#"><img src="img/q3.jpg" /></a></li>
+			<li><a href="#"><img src="img/q4.jpg" /></a></li>
+		</ul>
+	</div>
+	<div class="banner_opacity"></div>
+		<div id="banner_btn">
+			<ul>
+				<li class="current"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+</div>		
+		
+		
+<div id="nav">
+     <ul id="t_r">
+	<ul id="nav-l">
+        <li class="nav1">
+       	<div class="div1">
+           <h3>手机</h3>
+           <span>荣耀</span>
+           <span>HUAWEI P系列</span>
+         </div>
+            <dl class="nav1-r">
+                <dd class="nav1-r-1">
+                    <i>浏览手机频道</i>
+                   <p><a>荣耀</a><a>荣耀V8</a><a>华为P9</a><a>华为Mate9</a><a>荣耀</a><a>华为P10</a><br /><a>荣耀V8 青春版</a><a>荣耀NOTE</a></p>
+                   <u>   <img src="img/nav2.jpg">
+                         <img src="img/nav2.jpg">
+                  	    <img src="img/nav2.jpg">
+                     	<img src="img/nav2.jpg">
+                    </u>				
+                </dd>
+            </dl>
+        </li>
+      </ul>  
+      <ul id="nav-l">  
+        <li class="nav2">
+          <div class="div2">
+           <h3>笔记本&平板</h3>
+           <span>平板电脑</span>
+           <span>笔记本电脑</span>
+         </div>
+            <dl class="nav1-r">
+                <dd class="nav1-r-1">
+                    <i>浏览笔记本&平板频道</i>
+                   <p>
+                   		<a>平板电脑</a><a>笔记本电脑</a><a>电脑配件</a>
+                   </p>
+                   <u>   
+                   	<img src="img/chen.png">
+                   	<img src="img/chen.png">
+                   	<img src="img/chen.png">
+                   	<img src="img/chen.png">
+                        
+                    </u>				
+                </dd>
+            </dl>
+        </li>
+        </ul>
+       
+      
+         <ul id="nav-l">  
+        <li class="nav3">
+          <div class="div3">
+           <h3>穿戴</h3>
+           <span>手环</span>
+           <span>手表</span>
+         </div>
+            <dl class="nav1-r">
+                <dd class="nav1-r-1">
+                    <i>浏览穿戴频道</i>
+                   <p>
+                   		<a>手环</a><a>手表</a>
+                   </p>
+                   <u>  <img src="img/chen.png">
+                   	<img src="img/chen.png">
+                   	<img src="img/chen.png">
+                   	<img src="img/chen.png">
+                    </u>				
+                </dd>
+            </dl>
+        </li>
+        </ul>
+        
+        
+        
+         <ul id="nav-l">  
+        <li class="nav4">
+          <div class="div4">
+           <h3>智能家居</h3>
+           <span>字母路由器</span>
+           <span>电视盒子</span>
+         </div>
+            <dl class="nav1-r">
+                <dd class="nav1-r-1">
+                    <i>浏览智能家居频道</i>
+                   <p>
+                   		<a>字母路由器</a><a>电视盒子</a>
+                        <a>随行WIFI</a>
+                        <a>Hilink生态产品</a>
+                        
+                   </p>
+                   <u>  <img src="img/chen.png">
+                   	<img src="img/chen.png">
+                   	<img src="img/chen.png">
+                   	<img src="img/chen.png">
+                    </u>				
+                </dd>
+            </dl>
+        </li>
+        </ul>
+        
+        
+       <ul id="nav-l">  
+        <li class="nav5">
+          <div class="div5">
+           <h3>通用配件</h3>
+           <span>移动电源</span>
+           <span>耳机</span>
+         </div>
+            <dl class="nav1-r">
+                <dd class="nav1-r-1">
+                    <i>浏览通用配件频道</i>
+                   <p>
+                   		<a>移动电源</a><a>耳机</a><a>音响</a>
+                   </p>    
+                      
+                   <u>   <img src="img/chen.png">
+                   	<img src="img/chen.png">
+                   	<img src="img/chen.png">
+                   	<img src="img/chen.png">
+                    </u>				
+                </dd>
+            </dl>
+        </li>
+        </ul>       
+	</ul>
+</ul>
+
+</div>
+		
+		<div id="subject">
+			<div class="margin">
+				<div class="boon">
+					<img src="img/lcon.png" class="lcon"/>
+					<p>欢迎来到华为商城，请<a href="http://127.0.0.1:8020/%E5%8D%8E%E4%B8%BA%E5%95%86%E5%9F%8E/log.html?__hbt=1498373757640" target="_blank" >登陆</a><br />
+						还没账号？ <a href="#" target="_blank" >注册</a> 即可享受  >					
+					</p>
+					<span>
+						<a href="https://sale.vmall.com/welcome.html" target="_blank">新人福利</a>
+					</span>
+					<span>
+						<a href="https://www.vmall.com/privilege" target="_blank">特权频道</a>
+					</span>
+				</div>
+				<div class="zone">
+					<li>
+						<a href="https://sale.vmall.com/1fqjtzc.html">
+							<div class="li1"><img src="img/c4f79817663ba5841dc0884bdc43f5da.png"/></div>
+							<div class="li1_1">荣耀9试用</div>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.vmall.com/recycle">
+							<div class="li1"><img src="img/7d4cb2ad397287007e4fd2fde3a51e74.png"/></div>
+							<div class="li1_1">以旧换新</div>
+						</a>
+					</li>
+					<li>
+						<a href="https://m.dahanbank.cn/ThirdPlatformActivity/huaweipc/huaPC.html">
+							<div class="li1"><img src="img/663df3138ece403b2516c14b2b04c32a.png"/></div>
+							<div class="li1_1">话费充值</div>
+						</a>
+					</li>
+					<li>
+						<a href="https://sale.vmall.com/welcome.html">
+							<div class="li1"><img src="img/f9ddef804eb528676e87bc1d333540ec.png"/></div>
+							<div class="li1_1">318元礼包</div>
+						</a>
+					</li>
+					<li>
+						<a href="https://sale.vmall.com/home.html">
+							<div class="li1"><img src="img/159bd86408659902e3e523facab750b3.png"/></div>
+							<div class="li1_1">数码特惠</div>
+						</a>
+					</li>
+					<li>
+						<a href="https://sale.vmall.com/peijian.html">
+							<div class="li1"><img src="img/a23a6093036ec6a1b8a52c5e35addf37.png"/></div>
+							<div class="li1_1">优选配件</div>
+						</a>
+					</li>
+				</div>
+			
+				<div class="notice">
+					<div class="notice_t">
+						<h3>公告</h3>
+					</div>
+					<div class="notice_b">
+						<li>
+							<a href="https://sale.vmall.com/smrz.html">
+							<img src="img/e98e288625183ec81a4a77e47b1053bc.png" />
+							实名认证
+							</a>
+						</li>
+						<li>
+							<a href="https://hwid1.vmall.com/CAS/portal/login.html?validated=true&themeName=red&service=https%3A%2F%2Fwww.vmall.com%2Faccount%2Fcaslogin%3Furl%3D%252Fmember%252Fzm&loginChannel=26000000&reqClientType=26">
+							<img src="img/b6f622b1c9c69bd3c03d6b1e5f6cae1a.png" />
+							芝麻信用
+							</a>
+						</li>
+						<li>
+							<a href="https://hwid1.vmall.com/CAS/portal/login.html?validated=true&themeName=red&service=https%3A%2F%2Fwww.vmall.com%2Faccount%2Fcaslogin%3Furl%3D%252Fpriority&loginChannel=26000000&reqClientType=26">
+							<img src="img/7bed8c195780c624556deced5677e4d6.png" />
+							优购码
+							</a>
+						</li>
+					</div>	
+				</div>
+				<div class="shw">
+					<li>
+						<a href="https://www.vmall.com/product/84570258.html" target="_blank">
+							<img src="img/20170616092620569.png" />
+						</a>
+					</li>
+					<li>
+						<a href="https://www.vmall.com/product/205641589.html" target="_blank">
+							<img src="img/20170608224130626.png" />
+						</a>
+					</li>
+					<li>
+						<a href="https://www.vmall.com/product/781507151.html" target="_blank">
+							<img src="img/20170618214623318.png"  />
+						</a>
+					</li>
+					<li>
+						<a href="https://sale.vmall.com/nova2.html" target="_blank">
+							<img src="img/2017052616312797.png" />
+						</a>
+					</li>
+				</div>
+				<div class="sell">
+					<h3>热销单品</h3>
+					<a href="https://www.vmall.com/product/98966557.html" >
+							<li>
+								<img src="img/1497422580638.jpg" />
+							</li>
+					</a>
+					<div class="sell1">
+						<a href="https://www.vmall.com/product/738677717.html#93757981,0" class="sell2">
+							<li>
+								<img src="img/428_428_1488445580911mp.jpg"/>
+								<h4>荣耀v9</h4>
+								<p>最高优惠200元，送保护壳</p>
+								<span>￥2599</span>
+							</li>
+						</a>
+						<a href="https://www.vmall.com/product/738677717.html#93757981,0" class="sell2">
+							<li>
+								<img src="img/428_428_1488445580911mp.jpg"/>
+								<h4>荣耀v9</h4>
+								<p>最高优惠200元，送保护壳</p>
+								<span>￥2599</span>
+							</li>
+						</a>
+						<a href="https://www.vmall.com/product/738677717.html#93757981,0" class="sell2" >
+							<li>
+								<img src="img/428_428_1488445580911mp.jpg"/>
+								<h4>荣耀v9</h4>
+								<p>最高优惠200元，送保护壳</p>
+								<span>￥2599</span>
+							</li>
+						</a>
+						<a href="https://www.vmall.com/product/738677717.html#93757981,0" class="sell2">
+							<li>
+								<img src="img/428_428_1488445580911mp.jpg"/>
+								<h4>荣耀v9</h4>
+								<p>最高优惠200元，送保护壳</p>
+								<span>￥2599</span>
+							</li>
+						</a>
+						<a href="https://www.vmall.com/product/738677717.html#93757981,0" >
+							<li>
+								<img src="img/428_428_1488445580911mp.jpg"/>
+								<h4>荣耀v9</h4>
+								<p>最高优惠200元，送保护壳</p>
+								<span>￥2599</span>
+							</li>
+						</a>
+						<a href="https://www.vmall.com/product/738677717.html#93757981,0" >
+							<li>
+								<img src="img/428_428_1488445580911mp.jpg"/>
+								<h4>荣耀v9</h4>
+								<p>最高优惠200元，送保护壳</p>
+								<span>￥2599</span>
+							</li>
+						</a>
+						<a href="https://www.vmall.com/product/738677717.html#93757981,0" >
+							<li>
+								<img src="img/428_428_1488445580911mp.jpg"/>
+								<h4>荣耀v9</h4>
+								<p>最高优惠200元，送保护壳</p>
+								<span>￥2599</span>
+							</li>
+						</a>
+						<a href="https://www.vmall.com/product/738677717.html#93757981,0" >
+							<li>
+								<img src="img/428_428_1488445580911mp.jpg"/>
+								<h4>荣耀v9</h4>
+								<p>最高优惠200元，送保护壳</p>
+								<span>￥2599</span>
+							</li>
+						</a>
+					</div>
+				</div>
+				
+				<div class="breakin">
+					<h3>精品推荐</h3>
+					<div class="breakin1">
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+					</div>
+				</div>
+		
+	
+	
+	
+	
+		<!--轮播图-->
+	
+	 <div class="imgbox">
+        	<ul id="banner_img">
+            	<li><img src="img/w1.jpg"/></li>
+               	<li><img src="img/w2.jpg"/></li>
+               	<li><img src="img/w3.jpg"/></li>
+               	<li><img src="img/w4.jpg"/></li>
+               	<li><img src="img/w5.jpg"/></li>
+            </ul>
+    <div class="clear"></div>
+    <div class="imgnum">
+    	<span class="onselect"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<script type="text/javascript">
+         var time = "";
+         var index = 1;
+         $(function () {
+             showimg(index);
+             //鼠标移入移出
+             $(".imgnum span").hover(function () {
+                clearTimeout(time);
+                var icon=$(this).text();
+                $(".imgnum span").removeClass("onselect").eq(icon-1).addClass("onselect");
+                $("#banner_img li").hide().stop(true,true).eq(icon-1).fadeIn("slow");
+             }, function () {
+                index=$(this).text()> 4 ? 1 :parseInt($(this).text())+1;
+                time = setTimeout("showimg(" + index + ")", 3000);
+             });
+         });
+
+         function showimg(num) {
+             index = num;
+             $(".imgnum span").removeClass("onselect").eq(index-1).addClass("onselect");
+             $("#banner_img li").hide().stop(true,true).eq(index-1).fadeIn("slow");
+             index = index + 1 > 5 ? 1 : index + 1;
+             time = setTimeout("showimg(" + index + ")", 3000);
+         }
+    </script>
+	
+	
+				<div class="phone">
+					<h3>手机</h3>
+					<a href="https://www.vmall.com/list-75" target="_blank">荣耀</a>
+					<a href="https://www.vmall.com/list-285" target="_blank">HUAWEI P系列</a>
+					<a href="https://www.vmall.com/list-77" target="_blank">荣耀畅玩系列</a>
+					<a href="https://www.vmall.com/list-76" target="_blank">HUAWEI Mate系列</a>
+					<a href="https://www.vmall.com/list-277" target="_blank">HUAWEI nova系列</a>
+					<a href="https://www.vmall.com/list-81" target="_blank">华为 G系列</a>
+					<a href="https://www.vmall.com/list-275" target="_blank">华为畅想系列</a>
+					<a href="https://www.vmall.com/list-38" target="_blank">合约机</a>
+					<a href="https://www.vmall.com/list-36" target="_blank">更多></a>
+				</div>
+				
+				<div class="honorv8">
+					<div class="honorv8t">
+						<a href="https://www.vmall.com/product/573144114.html" target="_blank">
+							<img src="img/v8.png" />
+						</a>
+						<a href="https://www.vmall.com/product/573144114.html" target="_blank">
+							<img src="img/v81.png" />
+							<h4>HUAWEI nova</h4>
+							<p>最高下单立减300元</p>
+							<span>￥1899</span>
+						</a>
+						<a href="https://www.vmall.com/product/573144114.html" target="_blank">
+							<img src="img/v81.png" />
+							<h4>HUAWEI nova</h4>
+							<p>最高下单立减300元</p>
+							<span>￥1899</span>
+						</a>
+						<a href="https://www.vmall.com/product/573144114.html" target="_blank">
+							<img src="img/v81.png" />
+							<h4>HUAWEI nova</h4>
+							<p>最高下单立减300元</p>
+							<span>￥1899</span>
+						</a>
+					</div>
+					<div class="honorv8b">
+						<a href="https://www.vmall.com/product/573144114.html" target="_blank">
+							<img src="img/v81.png" />
+							<h4>HUAWEI nova</h4>
+							<p>最高下单立减300元</p>
+							<span>￥1899</span>
+						</a>
+						<a href="https://www.vmall.com/product/573144114.html" target="_blank">
+							<img src="img/v81.png" />
+							<h4>HUAWEI nova</h4>
+							<p>最高下单立减300元</p>
+							<span>￥1899</span>
+						</a>
+						<a href="https://www.vmall.com/product/573144114.html" target="_blank">
+							<img src="img/v81.png" />
+							<h4>HUAWEI nova</h4>
+							<p>最高下单立减300元</p>
+							<span>￥1899</span>
+						</a>
+						<a href="https://www.vmall.com/product/573144114.html" target="_blank">
+							<img src="img/v81.png" />
+							<h4>HUAWEI nova</h4>
+							<p>最高下单立减300元</p>
+							<span>￥1899</span>
+						</a>
+					</div>
+				</div>
+				
+				<div class="computer">
+					<h3>笔记本电脑</h3>
+					<a href="https://www.vmall.com/list-41" target="_blank">平板电脑</a>
+					<a href="https://www.vmall.com/list-42" target="_blank">笔记本电脑</a>
+					<a href="https://www.vmall.com/list-317" target="_blank">笔记本配件</a>
+					<a href="https://www.vmall.com/list-40" target="_blank">更多></a>
+				</div>
+				
+				<div class="computer-se">
+					<a href="https://www.vmall.com/product/417236260.html" target="_blank">
+							<img src="img/m1.png"/>
+						</a>
+						<a href="https://www.vmall.com/product/889979598.html#530206332,0" target="_blank">
+							<img src="img/m4.png" />
+							<h4>HUAWEI MateBook E</h4>
+							<p>尊享6期免息</p>
+							<span>￥4988</span>
+						</a>
+						<a href="https://www.vmall.com/product/21046116.html#882934630,0" target="_blank">
+							<img src="img/m4.png" />
+							<h4>HUAWEI MateBook D</h4>
+							<p>最高下单立减300元</p>
+							<span>￥4988</span>
+						</a>
+						<a href="https://www.vmall.com/product/965498680.html#436445492,0" target="_blank">
+							<img src="img/m4.png" />
+							<h4>HUAWEI MateBook</h4>
+							<p>部分赠送扩展坞</p>
+							<span>￥6688</span>
+						</a>
+				</div>
+				
+				<div class="slab">
+					<h3>笔记本电脑</h3>
+					<a href="#" target="_blank">精品平板</a>
+					<a href="https://www.vmall.com/list-41" target="_blank">平板电脑</a>
+					<a href="https://www.vmall.com/list-42" target="_blank">笔记本电脑</a>
+					<a href="https://www.vmall.com/list-317" target="_blank">笔记本配件</a>
+					<a href="https://www.vmall.com/list-40" target="_blank">更多></a>
+				</div>
+				
+				<div class="slab-se">
+					<div class="slab-set">
+						<a href="https://www.vmall.com/product/142312570.html#121657460,0" target="_blank">
+							<img src="img/slab.png" />
+						</a>
+						<a href="https://www.vmall.com/product/2208.html#4625,0">
+							<img src="img/slab1.png"/>
+							<h4>华为平板 M2 8英寸</h4>
+							<p>哈曼卡顿音效 金属机身</p>
+							<span>￥1288</span>
+						</a>
+						<a href="https://www.vmall.com/product/2208.html#4625,0">
+							<img src="img/slab1.png"/>
+							<h4>华为平板 M2 8英寸</h4>
+							<p>哈曼卡顿音效 金属机身</p>
+							<span>￥1288</span>
+						</a>
+						<a href="https://www.vmall.com/product/2208.html#4625,0">
+							<img src="img/slab1.png"/>
+							<h4>华为平板 M2 8英寸</h4>
+							<p>哈曼卡顿音效 金属机身</p>
+							<span>￥1288</span>
+						</a>
+					</div>
+					<div class="slab-seb">
+					<a href="https://www.vmall.com/product/2208.html#4625,0">
+						<img src="img/slab1.png"/>
+						<h4>华为平板 M2 8英寸</h4>
+						<p>哈曼卡顿音效 金属机身</p>
+						<span>￥1288</span>
+					</a>
+					<a href="https://www.vmall.com/product/2208.html#4625,0">
+						<img src="img/slab1.png"/>
+						<h4>华为平板 M2 8英寸</h4>
+						<p>哈曼卡顿音效 金属机身</p>
+						<span>￥1288</span>
+					</a>
+					<a href="https://www.vmall.com/product/2208.html#4625,0">
+						<img src="img/slab1.png"/>
+						<h4>华为平板 M2 8英寸</h4>
+						<p>哈曼卡顿音效 金属机身</p>
+						<span>￥1288</span>
+					</a>
+					<a href="https://www.vmall.com/product/2208.html#4625,0">
+						<img src="img/slab1.png"/>
+						<h4>华为平板 M2 8英寸</h4>
+						<p>哈曼卡顿音效 金属机身</p>
+						<span>￥1288</span>
+					</a>
+					</div>
+				</div>
+				
+				<div class="dress">
+					<h3>智能穿戴</h3>
+					<a href="https://www.vmall.com/list-241" target="_blank">手环</a>
+					<a href="https://www.vmall.com/list-247" target="_blank">手表</a>
+					<a href="https://www.vmall.com/list-40" target="_blank">更多></a>
+				</div>
+				
+				<div class="dress-se">
+					<div class="dress-set">
+						<a href="https://www.vmall.com/product/658947392.html" target="_blank">
+							<img src="img/dress.png" />
+						</a>
+						<a href="https://www.vmall.com/product/3239.html#5767,0">
+							<img src="img/dress1.png" />
+							<h4>荣耀手环zero SS版</h4>
+							<p>限时优惠直降200</p>
+							<span>￥399</span>
+						</a>
+						<a href="https://www.vmall.com/product/3239.html#5767,0">
+							<img src="img/dress1.png" />
+							<h4>荣耀手环zero SS版</h4>
+							<p>限时优惠直降200</p>
+							<span>￥399</span>
+						</a>
+						<a href="https://www.vmall.com/product/3239.html#5767,0">
+							<img src="img/dress1.png" />
+							<h4>荣耀手环zero SS版</h4>
+							<p>限时优惠直降200</p>
+							<span>￥399</span>
+						</a>
+					</div>
+					<div class="dress-seb">
+					<a href="https://www.vmall.com/product/3239.html#5767,0">
+							<img src="img/dress1.png" />
+							<h4>荣耀手环zero SS版</h4>
+							<p>限时优惠直降200</p>
+							<span>￥399</span>
+						</a>
+					<a href="https://www.vmall.com/product/3239.html#5767,0">
+							<img src="img/dress1.png" />
+							<h4>荣耀手环zero SS版</h4>
+							<p>限时优惠直降200</p>
+							<span>￥399</span>
+						</a>
+					<a href="https://www.vmall.com/product/3239.html#5767,0">
+							<img src="img/dress1.png" />
+							<h4>荣耀手环zero SS版</h4>
+							<p>限时优惠直降200</p>
+							<span>￥399</span>
+						</a>
+					<a href="https://www.vmall.com/product/3239.html#5767,0">
+							<img src="img/dress1.png" />
+							<h4>荣耀手环zero SS版</h4>
+							<p>限时优惠直降200</p>
+							<span>￥399</span>
+						</a>
+					</div>
+				</div>
+				
+				<div class="home">
+					<h3>智能家居</h3>
+					<a href="https://www.vmall.com/list-263" target="_blank">子母路由</a>
+					<a href="https://www.vmall.com/list-46" target="_blank">电视盒子</a>
+					<a href="https://www.vmall.com/list-45" target="_blank">路由器</a>
+					<a href="https://www.vmall.com/list-44" target="_blank">电力猫</a>
+					<a href="https://www.vmall.com/list-97" target="_blank">随行wifi</a>
+					<a href="https://www.vmall.com/list-283" target="_blank">HUAWEI HiLink生态产品</a>
+					<a href="https://www.vmall.com/list-40" target="_blank">更多></a>
+				</div>
+				
+				
+				<div class="home-se">
+					<div class="home-set">
+						<a href="https://www.vmall.com/product/538499714.html" target="_blank">
+							<img src="img/home.png" />
+						</a>
+						<a href="https://www.vmall.com/product/886153777.html#432833965,0">
+							<img src="img/home1.png" />
+							<h4>华为路由器 A1</h4>
+							<p>千兆网口 千兆WiFi</p>
+							<span>￥399</span>
+						</a>
+						<a href="https://www.vmall.com/product/886153777.html#432833965,0">
+							<img src="img/home1.png" />
+							<h4>华为路由器 A1</h4>
+							<p>千兆网口 千兆WiFi</p>
+							<span>￥399</span>
+						</a>
+					</div>
+					<div class="home-seb">
+					<a href="https://www.vmall.com/product/886153777.html#432833965,0">
+							<img src="img/home1.png" />
+							<h4>华为路由器 A1</h4>
+							<p>千兆网口 千兆WiFi</p>
+							<span>￥399</span>
+						</a>
+					<a href="https://www.vmall.com/product/886153777.html#432833965,0">
+							<img src="img/home1.png" />
+							<h4>华为路由器 A1</h4>
+							<p>千兆网口 千兆WiFi</p>
+							<span>￥399</span>
+						</a>
+					<a href="https://www.vmall.com/product/886153777.html#432833965,0">
+							<img src="img/home1.png" />
+							<h4>华为路由器 A1</h4>
+							<p>千兆网口 千兆WiFi</p>
+							<span>￥399</span>
+						</a>
+					<a href="https://www.vmall.com/product/886153777.html#432833965,0">
+							<img src="img/home1.png" />
+							<h4>华为路由器 A1</h4>
+							<p>千兆网口 千兆WiFi</p>
+							<span>￥399</span>
+						</a>
+					</div>
+				</div>
+				
+				<div class="breakin">
+				<h3>精品推荐</h3>
+					<div class="breakin1">
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+					</div>
+				</div>
+				
+                
+				
+				<div class="accessories">
+					<h3>热销配件</h3>
+					<a href="https://www.vmall.com/list-56" target="_blank">移动电源</a>
+					<a href="https://www.vmall.com/list-229" target="_blank">耳机</a>
+					<a href="https://www.vmall.com/list-58" target="_blank">充电器/线材</a>
+					<a href="https://www.vmall.com/list-231" target="_blank">自拍杆/支架</a>
+					<a href="https://www.vmall.com/list-55" target="_blank">音响</a>
+					<a href="https://www.vmall.com/list-83" target="_blank">U盘/存储卡</a>
+					<a href="https://www.vmall.com/list-233" target="_blank">/排插</a>
+					<a href="https://www.vmall.com/list-235" target="_blank">摄像机/镜头</a>
+					<a href="https://www.vmall.com/list-239" target="_blank">智能硬件</a>
+					<a href="https://www.vmall.com/list-237" target="_blank">生活周边</a>
+					<a href="https://www.vmall.com/list-40" target="_blank">更多></a>
+				</div>
+				
+				
+				<div class="accessories-se">
+					<div class="accessories-set">
+						<a href="https://www.vmall.com/product/148576155.html" target="_blank">
+							<img src="img/accessories.png" />
+						</a>
+						<a href="https://www.vmall.com/product/706470980.html#937100113,0">
+							<img src="img/accessories1.png" />
+							<h4>华为10000Ah 移动电源</h4>
+							<p>18W双向快充</p>
+							<span>￥199</span>
+						</a>
+						<a href="https://www.vmall.com/product/706470980.html#937100113,0">
+							<img src="img/accessories1.png" />
+							<h4>华为10000Ah 移动电源</h4>
+							<p>18W双向快充</p>
+							<span>￥199</span>
+						</a>
+					</div>
+					<div class="accessories-seb">
+					<a href="https://www.vmall.com/product/706470980.html#937100113,0">
+							<img src="img/accessories1.png" />
+							<h4>华为10000Ah 移动电源</h4>
+							<p>18W双向快充</p>
+							<span>￥199</span>
+						</a>
+					<a href="https://www.vmall.com/product/706470980.html#937100113,0">
+							<img src="img/accessories1.png" />
+							<h4>华为10000Ah 移动电源</h4>
+							<p>18W双向快充</p>
+							<span>￥199</span>
+						</a>
+					<a href="https://www.vmall.com/product/706470980.html#937100113,0">
+							<img src="img/accessories1.png" />
+							<h4>华为10000Ah 移动电源</h4>
+							<p>18W双向快充</p>
+							<span>￥199</span>
+						</a>
+					<a href="https://www.vmall.com/product/706470980.html#937100113,0">
+							<img src="img/accessories1.png" />
+							<h4>华为10000Ah 移动电源</h4>
+							<p>18W双向快充</p>
+							<span>￥199</span>
+						</a>
+					</div>
+				</div>
+				
+				<div class="breakin">
+				<h3>精品推荐</h3>
+					<div class="breakin1">
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+					</div>
+				</div>
+				
+				
+				<div class="accessories">
+					<h3>品牌配件</h3>
+					<a href="https://www.vmall.com/list-56" target="_blank">移动电源</a>
+					<a href="https://www.vmall.com/list-229" target="_blank">耳机</a>
+					<a href="https://www.vmall.com/list-58" target="_blank">充电器/线材</a>
+					<a href="https://www.vmall.com/list-231" target="_blank">自拍杆/支架</a>
+					<a href="https://www.vmall.com/list-55" target="_blank">音响</a>
+					<a href="https://www.vmall.com/list-83" target="_blank">U盘/存储卡</a>
+					<a href="https://www.vmall.com/list-233" target="_blank">/排插</a>
+					<a href="https://www.vmall.com/list-235" target="_blank">摄像机/镜头</a>
+					<a href="https://www.vmall.com/list-239" target="_blank">智能硬件</a>
+					<a href="https://www.vmall.com/list-237" target="_blank">生活周边</a>
+					<a href="https://www.vmall.com/list-40" target="_blank">更多></a>
+				</div>
+				
+				
+				<div class="accessories-se">
+					<div class="accessories-set">
+						<a href="https://www.vmall.com/product/148576155.html" target="_blank">
+							<img src="img/accessories.png" />
+						</a>
+						<a href="https://www.vmall.com/product/706470980.html#937100113,0">
+							<img src="img/accessories1.png" />
+							<h4>华为10000Ah 移动电源</h4>
+							<p>18W双向快充</p>
+							<span>￥199</span>
+						</a>
+						<a href="https://www.vmall.com/product/706470980.html#937100113,0">
+							<img src="img/accessories1.png" />
+							<h4>华为10000Ah 移动电源</h4>
+							<p>18W双向快充</p>
+							<span>￥199</span>
+						</a>
+					</div>
+					<div class="accessories-seb">
+					<a href="https://www.vmall.com/product/706470980.html#937100113,0">
+							<img src="img/accessories1.png" />
+							<h4>华为10000Ah 移动电源</h4>
+							<p>18W双向快充</p>
+							<span>￥199</span>
+						</a>
+					<a href="https://www.vmall.com/product/706470980.html#937100113,0">
+							<img src="img/accessories1.png" />
+							<h4>华为10000Ah 移动电源</h4>
+							<p>18W双向快充</p>
+							<span>￥199</span>
+						</a>
+					<a href="https://www.vmall.com/product/706470980.html#937100113,0">
+							<img src="img/accessories1.png" />
+							<h4>华为10000Ah 移动电源</h4>
+							<p>18W双向快充</p>
+							<span>￥199</span>
+						</a>
+					<a href="https://www.vmall.com/product/706470980.html#937100113,0">
+							<img src="img/accessories1.png" />
+							<h4>华为10000Ah 移动电源</h4>
+							<p>18W双向快充</p>
+							<span>￥199</span>
+						</a>
+					</div>
+				</div>
+				
+				<div class="breakin">
+				<h3>精品推荐</h3>
+					<div class="breakin1">
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+						<a href="https://www.vmall.com/product/194128141.html#553811697,0" target="_blank" >
+							<img src="img/1496247658418.png" />
+							<h4>华为 Mate 9</h4>
+							<p>领券可优惠300</p>
+							<span>￥2999</span>
+						</a>
+					</div>
+				</div>
+				
+				<div class="real">
+					<a href="https://sale.vmall.com/smrz.html" target="_blank">
+						<img src="img/20170313112742735.jpg" />
+					</a>
+				</div>
+				
+			</div>
+		</div>
+		<article id="firm">
+			<div class="margin">
+				<div class="firm-t">
+					<a href="https://www.vmall.com/help/faq-934.html">
+						<li>
+							<s><img src="img/s-1.png"></s>
+							<span>500强企业  品质保证</span>
+						</li>
+					</a>
+					<a href="https://www.vmall.com/help/faq-834.html">
+						<li>
+							<s><img src="img/s-2.png"></s>
+							<span>7天退货  15天换货</span>
+						</li>
+					</a>
+					<a href="https://www.vmall.com/help/faq-821.html">
+						<li>
+							<s><img src="img/s-3.png"></s>
+							<span>99元起免运费</span>
+						</li>
+					</a>
+					<a href="http://consumer.huawei.com/cn/support/service-center/index.htm">
+						<li>
+							<s><img src="img/s-4.png"></s>
+							<span>448家维修网点  全国联保</span>
+						</li>
+					</a>
+				</div>
+				<div class="firm-b-l">
+					<div class="firm-b-l-1">
+						<img src="img/span1.png">
+						<dl>
+								<dt>购物相关</dt>
+							<a href="https://www.vmall.com/help/faq-790.html">
+								<dd>购物指南</dd>
+							</a>
+							<a href="https://www.vmall.com/help/faq-814.html">
+								<dd>配送方式</dd>
+							</a>
+							<a href="https://www.vmall.com/help/faq-828.html">
+								<dd>支付方式</dd>
+							</a>
+							<a href="https://www.vmall.com/help/category-16.html">
+								<dd>常见问题</dd>
+							</a>
+						</dl>
+					</div>
+					<div class="firm-b-l-1">
+						<img src="img/span1.png">
+						<dl>
+								<dt>购物相关</dt>
+							<a href="https://www.vmall.com/help/faq-790.html">
+								<dd>购物指南</dd>
+							</a>
+							<a href="https://www.vmall.com/help/faq-814.html">
+								<dd>配送方式</dd>
+							</a>
+							<a href="https://www.vmall.com/help/faq-828.html">
+								<dd>支付方式</dd>
+							</a>
+							<a href="https://www.vmall.com/help/category-16.html">
+								<dd>常见问题</dd>
+							</a>
+						</dl>
+					</div>
+					<div class="firm-b-l-1">
+						<img src="img/span1.png">
+						<dl>
+								<dt>购物相关</dt>
+							<a href="https://www.vmall.com/help/faq-790.html">
+								<dd>购物指南</dd>
+							</a>
+							<a href="https://www.vmall.com/help/faq-814.html">
+								<dd>配送方式</dd>
+							</a>
+							<a href="https://www.vmall.com/help/faq-828.html">
+								<dd>支付方式</dd>
+							</a>
+							<a href="https://www.vmall.com/help/category-16.html">
+								<dd>常见问题</dd>
+							</a>
+						</dl>
+					</div>
+					<div class="firm-b-l-1">
+						<img src="img/span1.png">
+						<dl>
+								<dt>购物相关</dt>
+							<a href="https://www.vmall.com/help/faq-790.html">
+								<dd>购物指南</dd>
+							</a>
+							<a href="https://www.vmall.com/help/faq-814.html">
+								<dd>配送方式</dd>
+							</a>
+							<a href="https://www.vmall.com/help/faq-828.html">
+								<dd>支付方式</dd>
+							</a>
+							<a href="https://www.vmall.com/help/category-16.html">
+								<dd>常见问题</dd>
+							</a>
+						</dl>
+					</div>
+					<div class="firm-b-l-1">
+						<img src="img/span1.png">
+						<dl>
+								<dt>购物相关</dt>
+							<a href="https://www.vmall.com/help/faq-790.html">
+								<dd>购物指南</dd>
+							</a>
+							<a href="https://www.vmall.com/help/faq-814.html">
+								<dd>配送方式</dd>
+							</a>
+							<a href="https://www.vmall.com/help/faq-828.html">
+								<dd>支付方式</dd>
+							</a>
+							<a href="https://www.vmall.com/help/category-16.html">
+								<dd>常见问题</dd>
+							</a>
+						</dl>
+					</div>
+					<div class="firm-b-l-1">
+						<img src="img/span1.png">
+						<dl>
+								<dt>购物相关</dt>
+							<a href="https://www.vmall.com/help/faq-790.html">
+								<dd>购物指南</dd>
+							</a>
+							<a href="https://www.vmall.com/help/faq-814.html">
+								<dd>配送方式</dd>
+							</a>
+							<a href="https://www.vmall.com/help/faq-828.html">
+								<dd>支付方式</dd>
+							</a>
+							<a href="https://www.vmall.com/help/category-16.html">
+								<dd>常见问题</dd>
+							</a>
+						</dl>
+					</div>
+				
+					<div class="firm-b-l-r">
+						<img src="img/span1.png">
+						<li>
+							<p>400-088-6888</p>
+							<span>24小时客服热线（仅收市话费）</span>
+						</li>
+						<li>
+							<a href="http://robotim.vmall.com/live800/chatClient/chatbox.jsp?companyID=8922&configID=10&location=B_002&chatfrom=web&enterurl=https%3A%2F%2Fwww.vmall.com%2F&k=1&remark=">
+								<img src="img/last1.png" />
+							</a>
+						</li>
+					</div>
+				</div>
+			</div>
+		</article>
+		<footer id="footer">
+			<div class="margin">
+				<div class="footer1">
+					<a href="https://www.vmall.com/" target="_blank">
+						<img src="img/logo2.png"/>
+					</a>
+				</div>
+				<div class="footer2">
+					<p> 
+						<a href="https://www.vmall.com/help/faq-2635.html">隐私政策</a>		
+						<a href="https://www.vmall.com/help/faq-778.html">服务协议</a>
+						Copyright © 2012-2017 NMALL COM 版权所有 保留一切权利
+					</p>
+					<p>公安备案<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011402010009" target="_blank" >苏公网安备32011402010009号 | </a><a href="http://www.miitbeian.gov.cn/" target="_blank">苏ICP备09062682号-9 |</a>增值电信业务经营许可证：苏B2-20130048号|</p>
+					<p>网络文化经营许可证：<a href="https://res.vmallres.com/pimages//sale/2016-10/20161009102851799.jpg" target="_blank">[2015] 2599-026号</a></p>
+				</div>
+				<div class="footer3">
+					<a href="http://odr.jsdsgsxt.gov.cn:8081/mbm/entweb/elec/certView.shtml?siteId=052c2cbca0b64d2b88ac4b7775ff40ce" target="_blank">
+						<img src="img/last2.png" />
+					</a>
+					<a href="http://odr.jsdsgsxt.gov.cn:8081/mbm/entweb/elec/certView.shtml?siteId=052c2cbca0b64d2b88ac4b7775ff40ce" target="_blank">
+						<img src="img/last3.png" />
+					</a>
+					
+					<a href="https://ss.knet.cn/verifyseal.dll?sn=e13010932010038497pwz6000000&trustKey=dn&trustValue=vmall.com" target="_blank">
+						<img src="img/last4.png" />
+					</a>
+					
+					<a href="https://credit.cecdc.com/CX20121017001773002082.html" target="_blank">
+						<img src="img/last5.png" />
+					</a>
+					
+				</div>
+			</div>
+		</footer>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		
+	</body>
+	
+</html>
